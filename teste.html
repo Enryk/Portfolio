@@ -11,29 +11,104 @@
     <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
     <title>Portfolio - Projetos</title>
 </head>
+
 <body>
-    <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-        <div class="navbar-item is-hoverable">
-          <a class="navbar-link">
-            Docs
-          </a>
-      
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Overview
-            </a>
-            <a class="navbar-item">
-              Elements
-            </a>
-            <a class="navbar-item">
-              Components
-            </a>
-            <hr class="navbar-divider">
-            <div class="navbar-item">
-              Version 0.9.4
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="./index.html">
+                    <img src="./assets/img/Portfolio.hu_full_logo.png" alt="logo-portfolio" width="90" height="50">
+                </a>
             </div>
-          </div>
+
+            <div id="navbarBasicExample" class="navbar-menu is-active">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">Início</a>
+                    <a class="navbar-item" href="./contato.html">Contato</a>
+                    <a class="navbar-item" href="./projetos.html">Projeto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Pagina-HTML-CSS</p>
+                        <p class="subtitle is-6">@carlosenryk</p>
+                      </div>
+                    </div>
+                
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                      <a href="#">#HTML5</a> <a href="#">#CSS</a>
+                      <br>
+                      <time datetime="2016-1-1">03:53 PM - 13 Jul 2022</time>
+                    </div>
+                  </div>
+            </div>
+                <div class="carousel">
+                    <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="./assets/img/img1-1280x960.jpg" alt="img1-1280x960">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="./assets/img/img2-1280x960.jpg" alt="img2-1280x960">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3">
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="./assets/img/img3-1280x960.jpg" alt="img3-1280x960">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                </div>
         </div>
-      </nav>
+    </section>
 </body>
+
 </html>

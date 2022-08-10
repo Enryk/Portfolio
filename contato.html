@@ -78,36 +78,43 @@
                             <p class="card-header-title">Contato</p>
                         </header>
 
-                        <div class="card-content">
-                            <div class="content">
-                                <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="email" placeholder="tiao@bastiao.com" value="">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
 
-                                <div class="field">
-                                    <label class="label">Mensagem</label>
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="Digite aqui sua mensagem"></textarea>
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <input type="hidden" name="accessKey" value="e1795872-1b42-46da-92eb-67a3487daf11">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/testeemail.html">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="field">
+                                        <label class="label" for="inputEmail">Email</label>
+                                        <div class="control has-icons-left has-icons-right">
+                                            <input class="input" type="email" id="inputEmail" name="email" placeholder="tiao@bastiao.com">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="field is-grouped">
-                                    <div class="control">
-                                        <button class="button is-primary">Enviar</button>
+                                    <div class="field">
+                                        <label class="label">Mensagem</label>
+                                        <div class="control">
+                                            <textarea class="textarea" name="message" id="textAreaMensagem" placeholder="Digite aqui sua mensagem"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-primary" id="btn" onclick="exibirMensagem">Enviar</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="./assets/js/button.js"></script>
 </body>
 </html>
